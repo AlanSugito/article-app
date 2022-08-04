@@ -1,0 +1,39 @@
+.card {
+    width: 20rem;
+    max-height: 30em;
+    box-shadow: 0 15px 20px -10px rgba(3, 3, 3, 0.42);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 0 20px 20px -10px rgba(3, 3, 3, 0.42);
+
+}
+.thumb {
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.headline {
+    text-transform: capitalize;
+}
+
+
+.text {
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.time {
+    font-size: .7rem;
+    color: rgb(158, 158, 158);
+}

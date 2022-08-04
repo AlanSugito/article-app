@@ -1,0 +1,22 @@
+.textArea {
+    width: calc(100% - 30px);
+    height: 20rem;
+    padding: 10px;
+    border: 3px solid aqua;
+    transition: .3s;
+    outline: none;
+    border-radius: 20px;
+}
+
+.textArea::placeholder {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.textArea:focus{
+    border-color: rgb(0, 157, 255);
+}
+
+.textArea:focus::placeholder {
+    visibility: hidden;
+}

@@ -1,0 +1,13 @@
+.footer {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    color: white;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}

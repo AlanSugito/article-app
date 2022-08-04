@@ -1,0 +1,45 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.content {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardContainer {
+    height: max-content;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: slide-up 2s forwards;
+}
+
+.btnGroup {
+    display: flex;
+}
+
+.createBtn {
+    position: fixed;
+    bottom: 3rem;
+    right: 2rem;
+    color: aqua;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 5px 10px 20px rgba(41, 41, 41, 0.254);
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}

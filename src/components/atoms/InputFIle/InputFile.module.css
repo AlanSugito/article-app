@@ -1,0 +1,28 @@
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.fileInput::-webkit-file-upload-button {
+    background-color: aqua;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 3px black;
+    border-radius: 20px;
+    filter: drop-shadow(0 15px 20px rgba(0, 0, 0, 0.456));
+    transition: .3s;
+}
+
+.fileInput::-webkit-file-upload-button:hover {
+    background-color: rgb(0, 157, 255);
+
+}
+
+
+.imgPreview {
+    width: 200px;
+}

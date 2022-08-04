@@ -1,0 +1,18 @@
+.btn  {
+    outline: none;
+    border: none;
+    background-color: aqua;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 500;
+    color: white;
+    text-shadow: 0 0 2px black;
+    text-transform: capitalize;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.btn:hover{
+    background-color: rgb(0, 174, 255);
+}

@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    padding: 10px 30px;
+    background-color: aqua;
+    text-shadow: 0 0 2px black;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header > h2 {
+    font-size: 2rem;
+}
+
+.logout{
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    transition: .3s;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.logout:hover {
+    background-color: rgb(255, 65, 65);
+
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
