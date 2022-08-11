@@ -12,7 +12,11 @@ const Card = (props) => {
             <div className={styles.text}>
                 <h3 className={styles.headline}>{headline}</h3>
                 <p className={styles.time}>{postedAt}</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, quos nihil odio vel ducimus reprehenderit vero corrupti mollitia perspiciatis ipsam maiores.</p>
+                <p>{props.content}</p>
+            </div>
+            <div className={styles.btnGroup}>
+              <p className={styles.edit} onClick={props.onEdit}>Edit</p>
+              <p className={styles.delete} onClick={props.onDelete}>Delete</p>
             </div>
         </div>
    

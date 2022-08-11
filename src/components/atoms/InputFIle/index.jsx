@@ -1,14 +1,13 @@
 import React from 'react'
 import styles from './InputFile.module.css'
-import dummyImg from '../../../assets/clement-helardot-95YRwf6CNw8-unsplash.jpg'
 import Gap from '../Gap'
 
-const InputFile = () => {
+const InputFile = ({img, ...rest}) => {
   return (
     <div className={styles.inputWrapper}>
-        <img src={dummyImg} alt="preview" className={styles.imgPreview}/>
+        {img && <img src={img} alt="preview" className={styles.imgPreview}/>}
         <Gap height={20} />
-        <input type="file" className={styles.fileInput}/>
+        <input type="file" className={styles.fileInput} {...rest} required={true}/>
     </div>
   )
 }

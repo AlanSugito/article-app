@@ -1,15 +1,30 @@
+/* eslint-disable default-case */
 const globalState = {
-    isLogin: false,
-}
+  isLogin: false,
+  isVisible: false,
+  articleSelected: null
+};
 
 const globalReducer = (state = globalState, action) => {
-    if (action.type === "CHANGE_IS_LOGIN") {
+  switch (action.type) {
+    case "CHANGE_IS lOGIN":
+      return {
+        ...state,
+        isLogin: action.value,
+      };
+    case "CHANGE_IS_VISIBLE":
+      return {
+        ...state,
+        isVisible: action.value,
+      };
+    case "CHANGE_ARTICLE_SELECTED":
         return {
             ...state,
-            isLogin: action.value
+            articleSelected: action.value
         }
-    }
-    return state
-}
+    default:
+      return state;
+  }
+};
 
-export default globalReducer
+export default globalReducer;

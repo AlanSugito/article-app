@@ -3,10 +3,12 @@ import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { getArticle } from "../../config/redux/action";
 import {BsFillArrowLeftCircleFill} from 'react-icons/bs'
+import { useNavigate } from "react-router-dom";
 import styles from "./Article.module.css";
 
 
 const Article = () => {
+  const navigate = useNavigate()
   const params = useParams()
   const {articleId} = params
 
@@ -18,13 +20,13 @@ const Article = () => {
 
   return (
     <div className={styles.article}>
-      <BsFillArrowLeftCircleFill size={50} className={styles.backBtn}/>
+      <BsFillArrowLeftCircleFill size={50} className={styles.backBtn} onClick={() => navigate('/')}/>
       <div className={styles.articleWrapper}>
         <img src={`http://localhost:5000/${article.imgSrc}`} alt="" className={styles.hero}/>
         <h2 className={styles.headline}>{article.headline}</h2>
         <p className={styles.time}>{article.postedAt}</p>
         <p className={styles.content}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quasi exercitationem. Libero repellat ex esse similique, tenetur quis quae laboriosam iure. Facilis perspiciatis tempore nam, eaque velit inventore deleniti illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil numquam incidunt quam at repellat quos labore cupiditate quae perspiciatis reiciendis? Sint quis cumque quae facere commodi earum odio ducimus modi.
+           {article.content}
         </p>
       </div>
     </div>

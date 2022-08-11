@@ -1,18 +1,18 @@
 .card {
     width: 20rem;
-    max-height: 30em;
-    box-shadow: 0 15px 20px -10px rgba(3, 3, 3, 0.42);
     border-radius: 20px;
     overflow: hidden;
     margin: 20px;
     cursor: pointer;
     transition: .3s;
-
+    box-shadow: 0 20px 20px rgba(3, 3, 3, 0.42);
+    position: relative;
+    height: 30rem;
 }
 
 .card:hover {
-    transform: scale(1.15);
-    box-shadow: 0 20px 20px -10px rgba(3, 3, 3, 0.42);
+    transform: scale(1.12);
+    box-shadow: 0 25px 20px -20px rgba(3, 3, 3, 0.42);
 
 }
 .thumb {
@@ -36,4 +36,37 @@
 .time {
     font-size: .7rem;
     color: rgb(158, 158, 158);
+}
+
+.btnGroup {
+    display: flex;
+    justify-content: space-between;
+    width: 6rem;
+    position: absolute;
+    bottom: 0;
+    right: 3rem;
+}
+
+.delete {
+    color: rgb(255, 56, 56);
+    transition: .3s;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.delete:hover {
+    background-color: rgb(255, 56, 56);
+    color: white;
+}
+
+.edit {
+    color: aqua;
+    transition: .3s;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.edit:hover {
+    color: white;
+    background-color: aqua;
 }
